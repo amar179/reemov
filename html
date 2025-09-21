@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Background Remover — Amar</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="container">
+<h1>Background Remover (Netlify Functions)</h1>
+<p>Image चुनें — फिर "Remove Background" दबाएँ।</p>
+
+
+<div class="uploader">
+<input id="fileInput" type="file" accept="image/*">
+<button id="removeBtn" disabled>Remove Background</button>
+</div>
+
+
+<div id="status"></div>
+
+
+<div class="preview">
+<div>
+<h3>Original</h3>
+<img id="origImg" alt="original preview">
+</div>
+<div>
+<h3>Result</h3>
+<canvas id="resultCanvas"></canvas>
+<a id="downloadBtn" download="no-bg.png" style="display:none">Download Result</a>
+</div>
+</div>
+
+
+<!-- AdSense placeholder: अपने AdSense code को यहाँ डालें -->
+<!-- Example: <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+<div class="adsense-placeholder">Ad space (place AdSense snippet here)</div>
+
+
+</div>
+
+
+<script src="/script.js"></script>
+</body>
+</html>
